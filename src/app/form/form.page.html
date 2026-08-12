@@ -1,0 +1,117 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Basic Form</h3>
+  <ion-item>
+    <ion-input
+      label="Name"
+      labelPlacement="floating"
+      placeholder="Enter your name"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input
+      type="email"
+      label="Email"
+      labelPlacement="floating"
+      placeholder="you@example.com"
+    >
+    </ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" label="Password" labelPlacement="floating">
+    </ion-input>
+  </ion-item>
+
+  <h3>Using Angular Two-Way Binding</h3>
+  <ion-input label="Username" labelPlacement="floating" [(ngModel)]="username">
+  </ion-input>
+
+  <ion-button (onKeyPress)="login()"> Sign In </ion-button>
+
+  <h3>Text Areas</h3>
+  <ion-item>
+    <ion-textarea
+      label="Description"
+      labelPlacement="floating"
+      placeholder="Enter a description"
+      [autoGrow]="true"
+    >
+    </ion-textarea>
+  </ion-item>
+
+  <h3>Select Inputs</h3>
+  <ion-item>
+    <ion-select
+      label="Country"
+      labelPlacement="floating"
+      placeholder="Select a country"
+    >
+      <ion-select-option value="id"> Indonesia </ion-select-option>
+
+      <ion-select-option value="sg"> Singapore </ion-select-option>
+
+      <ion-select-option value="my"> Malaysia </ion-select-option>
+
+      <ion-select-option value="au"> Australia </ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <h3>Checkboxes</h3>
+  <ion-item>
+    <ion-checkbox> Subscribe to newsletter </ion-checkbox>
+  </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-checkbox slot="start"> </ion-checkbox>
+
+      <ion-label> Email notifications </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"> </ion-checkbox>
+
+      <ion-label> Product updates </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"> </ion-checkbox>
+
+      <ion-label> Special offers </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h3>Radio Buttons</h3>
+  <ion-radio-group>
+    <ion-list-header>
+      <ion-label> Payment Method </ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-radio value="card"> Credit Card </ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="paypal"> PayPal </ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-radio value="bank"> Bank Transfer </ion-radio>
+    </ion-item>
+  </ion-radio-group>
+
+  <h3>Toggle Controls</h3>
+  <ion-item>
+    <ion-label> Enable Notifications </ion-label>
+
+    <ion-toggle slot="end" [(ngModel)]="notificationsEnabled"> </ion-toggle>
+  </ion-item>
+</ion-content>

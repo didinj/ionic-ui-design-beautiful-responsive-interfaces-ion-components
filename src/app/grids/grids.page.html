@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>grids</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Basic Grid</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col> Column 1 </ion-col>
+
+      <ion-col> Column 2 </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> One </ion-col>
+
+      <ion-col> Two </ion-col>
+
+      <ion-col> Three </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Controlling Column Width</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6"> Left Column </ion-col>
+
+      <ion-col size="6"> Right Column </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4"> Sidebar </ion-col>
+
+      <ion-col size="8"> Main Content </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3"> Navigation </ion-col>
+
+      <ion-col size="9"> Content </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Responsive Breakpoints</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeMd="6"> Left Content </ion-col>
+
+      <ion-col size="12" sizeMd="6"> Right Content </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Multiple Responsive Breakpoints</h3>
+  <ion-col size="12" sizeSm="6" sizeLg="4"> Product </ion-col>
+
+  <h3>Controlling Column Alignment</h3>
+  <ion-row class="ion-align-items-center">
+    <ion-col> Content </ion-col>
+
+    <ion-col> Content </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="10" sizeMd="6"> Centered Content </ion-col>
+  </ion-row>
+
+  <h3>Responsive Sidebar and Main Content</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Categories </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> Navigation and filters </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeLg="9">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Products </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> Main application content </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

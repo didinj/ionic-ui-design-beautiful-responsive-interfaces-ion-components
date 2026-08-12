@@ -1,0 +1,205 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h3>Basic Cards</h3>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Welcome to Ionic </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Build beautiful and responsive mobile applications using Ionic and
+      Angular.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> Getting Started </ion-card-subtitle>
+
+      <ion-card-title> Learn Ionic UI Design </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Learn how to build modern interfaces using Ionic components.
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Adding Images</h3>
+  <ion-card>
+    <img src="assets/images/ionic-ui.jpg" alt="Ionic UI design" />
+
+    <ion-card-header>
+      <ion-card-title> Modern Mobile UI </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Create responsive interfaces that work across mobile, tablet, and desktop
+      devices.
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Adding Actions</h3>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Premium Course </ion-card-title>
+
+      <ion-card-subtitle> $49 </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Learn how to build production-ready Ionic applications.
+    </ion-card-content>
+
+    <ion-button expand="block" fill="clear"> View Course </ion-button>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Project Settings </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content> Configure your project preferences. </ion-card-content>
+
+    <ion-buttons>
+      <ion-button> Edit </ion-button>
+
+      <ion-button color="danger"> Delete </ion-button>
+    </ion-buttons>
+  </ion-card>
+
+  <h3>Product Card</h3>
+  <ion-card>
+    <img src="assets/images/product.jpg" alt="Wireless headphones" />
+
+    <ion-card-header>
+      <ion-card-subtitle> Audio </ion-card-subtitle>
+
+      <ion-card-title> Wireless Headphones </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <strong>$79.99</strong>
+
+      <p>Comfortable wireless headphones with active noise cancellation.</p>
+
+      <ion-button expand="block"> Add to Cart </ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <h3>Multiple Cards</h3>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeMd="6" sizeLg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Product One </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> Product description goes here. </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" sizeLg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Product Two </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> Product description goes here. </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeMd="6" sizeLg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title> Product Three </ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content> Product description goes here. </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Dashboard Cards</h3>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle> Monthly Revenue </ion-card-subtitle>
+
+      <ion-card-title> $12,450 </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-text color="success">
+        <strong>+18.4%</strong>
+      </ion-text>
+
+      compared with last month.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" sizeSm="6" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle> Revenue </ion-card-subtitle>
+
+            <ion-card-title> $12,450 </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeSm="6" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle> Orders </ion-card-subtitle>
+
+            <ion-card-title> 328 </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeSm="6" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle> Customers </ion-card-subtitle>
+
+            <ion-card-title> 1,842 </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" sizeSm="6" sizeLg="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle> Conversion </ion-card-subtitle>
+
+            <ion-card-title> 8.6% </ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <h3>Making a Card Interactive</h3>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Angular Tutorial </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      Learn Angular fundamentals and modern application development.
+    </ion-card-content>
+
+    <ion-button fill="clear" routerLink="/tutorials/angular">
+      Read Tutorial
+      <ion-icon slot="end" name="arrow-forward-outline"> </ion-icon>
+    </ion-button>
+  </ion-card>
+</ion-content>

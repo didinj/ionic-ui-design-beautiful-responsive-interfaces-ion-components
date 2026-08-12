@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>segment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- <ion-segment
+    [value]="selectedCategory"
+    (ionChange)="onCategoryChange($event)"
+  >
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="popular">
+      <ion-label>Popular</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="new">
+      <ion-label>New</ion-label>
+    </ion-segment-button>
+  </ion-segment> -->
+
+  <ion-segment
+    [value]="selectedCategory"
+    (ionChange)="onCategoryChange($event)"
+  >
+    <ion-segment-button value="all">
+      <ion-label>All</ion-label>
+    </ion-segment-button>
+
+    <ion-segment-button value="popular">
+      <ion-label>Popular</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  @if (selectedCategory === 'all') {
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> All Products </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content> Showing all available products. </ion-card-content>
+  </ion-card>
+
+  } @else {
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title> Popular Products </ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content> Showing the most popular products. </ion-card-content>
+  </ion-card>
+
+  }
+</ion-content>
